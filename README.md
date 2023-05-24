@@ -17,6 +17,8 @@ This is a web application built with React & Typescript using Vite that allows u
 
 - Browse top rated movies
 - Search for movies by title
+- Infinite scrolling to improve UX
+- Lazy Load Image to setup default image and blur effect
 - View movie details including synopsis, release date, and ratings
 
 ## Technologies Used
