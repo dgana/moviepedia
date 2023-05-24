@@ -10,10 +10,7 @@ import useDebounce from "../../hooks/useDebounce";
 
 const getNextPageParam = (lastPage: APIResult) => (lastPage.total_pages > lastPage.page ? lastPage.page + 1 : undefined);
 
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
-interface HomePageProps {}
-
-const HomePage: FC<HomePageProps> = () => {
+const HomePage: FC = () => {
   const { ref, inView } = useInView();
   const [{ search }, onChange] = useForm({ search: "" });
   const debouncedSearchMovie = useDebounce(search, 1000);

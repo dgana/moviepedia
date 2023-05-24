@@ -8,6 +8,7 @@ import React from "react";
 import { InfiniteData } from "@tanstack/react-query";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import { useNavigate } from "react-router-dom";
 
 const datagridVariants = cva("grid gap-8", {
   variants: {
@@ -25,13 +26,14 @@ export interface MovieGridProps extends HTMLAttributes<HTMLDivElement>, VariantP
 }
 
 const MovieGrid: FC<MovieGridProps> = ({ data, type, className, ...props }) => {
+  const navigate = useNavigate();
   return (
     <div className={cn(datagridVariants({ type, className }))} {...props}>
       {data &&
         data.pages.map((page, i) => (
           <React.Fragment key={i}>
             {page?.results.map(({ title, poster_path, id }) => (
-              <Card data-testid={id} key={id}>
+              <Card data-testid={id} key={id} onClick={() => navigate(`/${id}`)}>
                 <LazyLoadImage
                   className="m-auto rounded"
                   width={300}
