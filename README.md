@@ -1,6 +1,6 @@
 # Moviepedia
 
-This is a web application built with React & Typescript using Vite that allows users to browse and search for movies using the MovieDB API. [Demo App](https://646de1708a156c099fd0e4a8--mellow-churros-eb5f8f.netlify.app/)
+This is a web application built with React & Typescript using Vite that allows users to browse and search for movies using the MovieDB API. [Demo App](https://mellow-churros-eb5f8f.netlify.app)
 
 ## Table of Contents
 
