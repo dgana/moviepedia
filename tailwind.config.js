@@ -6,9 +6,10 @@ export default {
       fontFamily: {
         fugaz: ['"Fugaz One"', "sans-serif"],
         montserat: ["Montserrat", "sans-serif"],
+        secular: ["Secular One", "sans-serif"],
       },
       gridTemplateColumns: {
-        fit: "repeat(auto-fit, minmax(300px, 1fr))",
+        "fill-300": "repeat(auto-fill, minmax(300px, 1fr))",
       },
     },
   },

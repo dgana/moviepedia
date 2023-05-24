@@ -6,7 +6,7 @@ const HeaderLayout = () => {
     <>
       <FlexBox className="w-full fixed bg-zinc-50 px-12 z-10 shadow-xl" justify="between" align="center">
         <Link to="/">
-          <Text className="mx-4 my-4 text-blue-900" font="fugaz" size="xl">
+          <Text className="mx-4 my-4 text-blue-900" font="fugaz" size="2xl">
             Movie Show
           </Text>
         </Link>

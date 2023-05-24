@@ -12,7 +12,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 const datagridVariants = cva("grid gap-8", {
   variants: {
     type: {
-      default: "grid-cols-fit",
+      default: "grid-cols-fill-300",
     },
   },
   defaultVariants: {
@@ -25,7 +25,6 @@ export interface MovieGridProps extends HTMLAttributes<HTMLDivElement>, VariantP
 }
 
 const MovieGrid: FC<MovieGridProps> = ({ data, type, className, ...props }) => {
-  console.log(data);
   return (
     <div className={cn(datagridVariants({ type, className }))} {...props}>
       {data &&
@@ -41,7 +40,7 @@ const MovieGrid: FC<MovieGridProps> = ({ data, type, className, ...props }) => {
                   placeholderSrc={"https://picsum.photos/id/51/300/300"}
                   src={poster_path ? `${IMAGE_URL}/w300/${poster_path}` : "https://picsum.photos/id/51/300/450"}
                 />
-                <Text size="lg" font="default" className="text-gray-600 text-center font-extrabold">
+                <Text size="xl" font="secular" className="text-slate-900 font-extrabold">
                   {title}
                 </Text>
               </Card>

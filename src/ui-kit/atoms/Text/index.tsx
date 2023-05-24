@@ -8,11 +8,13 @@ const textVariants = cva("text-white", {
       default: "text-sm",
       sm: "text-md",
       lg: "text-lg",
-      xl: "text-2xl",
+      xl: "text-xl",
+      "2xl": "text-2xl",
     },
     font: {
       default: "font-montserat",
       fugaz: "font-fugaz",
+      secular: "font-secular",
     },
   },
   defaultVariants: {
